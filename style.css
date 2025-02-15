@@ -1,0 +1,72 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #fce4ec;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.cute-girl img {
+  width: 200px;
+  height: auto;
+}
+
+.question {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d81b60;
+  margin: 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Both buttons have basic styling */
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* Yes button style */
+#yes-btn {
+  background-color: #ff4081;
+  color: white;
+}
+
+/* No button style - initially relative so that it sits in the flex layout */
+#no-btn {
+  background-color: #f44336;
+  color: white;
+  position: relative;
+}
+
+#funny-text {
+  font-size: 18px;
+  color: #777;
+  margin-top: 20px;
+  min-height: 30px; /* Keeps space even when text changes */
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .question {
+    font-size: 20px;
+  }
+  button {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}
